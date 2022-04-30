@@ -1,0 +1,196 @@
+@media (min-width: 320px) {
+  .hero .text-overlay {
+    align-items: flex-end;
+    .bottom-fix {padding-bottom: 2rem;}
+    h4 {
+      font-size: 1.5rem;
+      line-height: 28.8px;
+      font-weight: 700;
+      width: 400px !important;
+    }
+  }
+  .logos {
+    gap: 2rem;
+    margin-bottom: 3rem;
+    .logos-homepage {
+      width: 56px;
+      &.archer {height: 56px;width: 74px;}
+    }
+  }
+  .product-range {
+    padding: 0;
+    .product-title {font-size: 18px;line-height: 27px;}
+    &.product-range-page {
+      padding: 4rem 0;
+      margin: 0;
+      .flex-row {
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 700px;
+        gap: 0.5rem;
+
+      }
+    }
+    .product-cat-list .product-cat {
+      width: 164px;
+      .info p {font-size: 12px;line-height: 18px;}
+    }
+  }
+  .video-bg {display: none;}
+  .about-us {
+    padding: 4rem 1.5rem 10rem;
+    .main-layout {padding: 0;}
+    .col {
+      padding: 0 1.5rem;
+      h5, p, ul li {width: auto !important;}
+    }
+  }
+  .about-us-home {
+    height: auto;
+    .main-layout {
+      position: initial;
+      h5 {
+        width: auto;
+        font-size: 16px;line-height: 24px;
+      }
+      p {
+        font-size: 14px;line-height: 21px;
+        width: auto;
+      }
+    }
+  }
+  .product-list {
+    .main-layout {
+      padding: 5rem 1.5rem 10rem;
+      .bg-overlay {height: 68px !important;}
+      .tab-content a .product-card .product-image .bg-overlay {
+        height: 192px !important;
+      }
+      .cat .cat-picker {
+        height: 68px !important;
+        .info h5 {
+          font-size: 14px;line-height: 21px;
+        }
+      }
+    }
+  }
+  .product-details {
+    .main-layout {
+      padding: 5rem 1.5rem 10rem;
+      .product-slider {
+        width: 240px; height: 184px;
+      }
+      .slick-slider {
+        height: 184px;
+        margin-bottom: 4rem;
+        .slick-list {height: 184px;}
+      }
+      .summary .row {row-gap: 0.5rem;}
+    }
+  }
+  .events .main-layout {
+    padding: 4rem 1.5rem 10rem;
+    .card-body {
+      width: auto;
+    }
+  }
+  .contact-us .main-layout {padding: 4rem 1.5rem 8rem;}
+  .bottom-inquiry .text-overlay {
+    .bg-overlay {height: 144px;}
+    .w-100 {
+      .col {
+        flex-direction: column;
+      }
+    }
+    h4 {
+      font-size: 20px;line-height: 30px;text-align: center;width: 276px !important;margin-bottom: 1rem;
+    }
+    .btn {
+      font-size: 14px;
+    }
+  }
+  footer .text-overlay {
+    .sea-map {height: 282px;}
+    h4 {
+      font-size: 1.5rem;
+      line-height: 28.8px;
+      font-weight: 700;
+      text-align: center;
+      width: 320px !important;
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .hero .text-overlay {
+    align-items: flex-end;
+    .bottom-fix {padding-bottom: 2rem;}
+    h4 {
+      font-size: 2rem;
+      line-height: 38.4px;
+      font-weight: 700;
+      width: 400px !important;
+    }
+  }
+  .logos {gap: 4rem;}
+  .bottom-inquiry .text-overlay h4 {
+    font-size: 2rem;
+    line-height: 38.4px;
+    font-weight: 700;
+    width: 312px !important;
+  }
+  .video-bg {display: initial;width: 560px !important;}
+  .about-us-home .main-layout {
+    position: relative;
+    .brand-logo {margin-bottom: 1rem;}
+    h5 {width: 560px;font-size: 18px;line-height: 27px;}
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      width: 560px;
+      margin-bottom: 1rem;
+    }
+  }
+  .bottom-inquiry .text-overlay {
+    .bg-overlay {
+      height: 12.5rem;
+    }
+    .w-100 .col {
+      flex-direction: row;
+    }
+  }
+  .logos {margin-bottom: 4rem;}
+  .product-range-page {padding: 0; margin-bottom: 4rem;}
+  footer .text-overlay {
+    .sea-map {height: 404px;}
+    h4 {
+      font-size: 2rem;
+      line-height: 38.4px;
+      font-weight: 700;
+      text-align: center;
+      width: 400px !important;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: end;
+  }
+  .product-range-page {
+    .flex-row {
+      flex-wrap: initial;
+      justify-content: center;
+    }
+  }
+  .video-bg {display: initial;}
+  .about-us-home .main-layout h5, .about-us-home .main-layout p {
+    width: initial;
+  }
+}
+@media (min-width: 1440px) {
+  .about-us-home .video-bg {
+    width: 1140px;
+  }
+}

@@ -1,0 +1,439 @@
+@import "variables";
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap');
+
+html, * {
+  font-family: 'Rubik', sans-serif;
+  color: $black;
+}
+
+.page-title {
+  font-size: 24px;
+  line-height: 150%;
+  margin-bottom: 2rem;
+}
+
+.navbar {
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+  .brand-logo {
+    width: 64px;
+    height: 72px;
+    object-fit: cover;
+  }
+  .navbar-collapse {
+    // flex: initial;
+    .navbar-nav {
+      align-items: center;
+      a {
+        color: $black;
+        text-decoration: none;
+        &.active {
+          font-weight: 700;
+        }
+        &.btn-solid {
+          padding: 8px 16px;
+          border-radius: 6px;
+          background-color: $blue-80;
+          color: $white;
+        }
+        margin-left: 2rem;
+      }
+    }
+  }
+}
+
+.hero .text-overlay {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .bg-overlay {height: 26.25rem; width: 100%;}
+  h4 {
+    font-size: 3rem;
+    width: 30rem !important;
+    line-height: 150%;
+    font-weight: 700;
+    color: $white;
+    width: 700px !important;
+    margin-bottom: 1rem;
+  }
+  .btn {font-size: 20px;font-weight: 600;}
+}
+
+.product-range {
+  &-page {
+    padding: 5rem 0;
+  }
+  display: flex;
+  align-items: center; 
+  flex-direction: column;
+  margin-bottom: 5rem;
+  .product-title {font-size: 20px;font-weight: 700;margin-bottom: 1.5rem;}
+  .product-cat-list {
+    .product-cat {
+      position: relative;
+      width: 256px; 
+      &:hover {
+        .info .hover-arrow {
+          right:8px;
+          position: absolute;
+          opacity: 1;
+          transition: all .2s ease-in-out;
+        }
+      }
+      .bg-overlay {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0, .32);
+        position: absolute;
+        top: 0; 
+      }
+      .info {
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        p {color: $white; font-size: 16px; width: 160px; font-weight: 700; margin-bottom: 1rem; margin-left: 1rem;}
+        .hover-arrow {
+          right: -16px;
+          position: absolute;
+          opacity: 0;
+          margin-bottom: 1rem; margin-right: 1rem;
+          transition: all .2s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+.about-us-home {
+  height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+  .video-bg {
+    // hack height
+    height: 98%;
+    padding-top: 2px;
+    // hack height
+
+    right: 0;
+    position: absolute;
+    margin-right: 0;
+    width: 900px;
+    object-fit: cover;
+  }
+  .bg-overlay {height: 100%;}
+  .main-layout {
+    background: linear-gradient(90deg, #FFFFFF 40.49%, rgba(255, 255, 255, 0) 98.56%, rgba(255, 255, 255, 0) 114.45%, rgba(255, 255, 255, 0) 305.21%);
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .brand-logo {
+      width: 64px;
+      height: 72px;
+      margin-bottom: 2rem;
+    }
+    h5 {width: 996px;font-size: 32px;line-height: 38.4px;font-weight: 700;margin-bottom: 0.5rem;}
+    p {width: 800px;font-size: 18px;line-height: 27px;margin-bottom: 2rem;}
+    .btn-solid {
+      padding: 8px 16px;
+      border-radius: 6px;
+      background-color: $blue-80;
+      color: $white;
+      text-decoration: none;
+    }
+  }
+}
+
+.bottom-inquiry .text-overlay {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .bg-overlay {height: 20rem;}
+  .bottom-fix {bottom: 56px;}
+  h4 {
+    font-size: 3rem;
+    width: 30rem !important;
+    line-height: 150%;
+    font-weight: 700;
+    color: $white;
+    width: 800px;
+  }
+  .btn {font-size: 20px;font-weight: 600;}
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  background-color: $black;
+  gap: 8rem;
+  margin-bottom: 5rem;
+  .logos-homepage {
+    width: 88px;
+    height: auto;
+    object-fit: cover;
+    &.archer {
+      height: 72px;
+    }
+  }
+}
+
+.about-us {
+  .main-layout{
+    padding: 5rem 0;
+    h5 {width: 996px;font-size: 32px;line-height: 38.4px;font-weight: 700;margin-bottom: 2rem;}
+    .about-hero {height: 360px; margin-bottom: 2rem;}
+    .body-text {
+      p,li {
+        font-size: 18px;
+        line-height: 27px;
+        width: 1000px;
+      }
+    }
+  }
+}
+
+.partner-list {
+  .row {row-gap: 3rem;}
+  .partner-card {
+    .partner-logo {
+      height: 120px;
+      width: 120px;
+      &.archer {
+        width: 280px;
+      }
+    }
+    h6 {font-size: 24px;line-height: 150%;font-weight: 700;margin-top: 1rem;margin-bottom: 0.875rem;}
+    p {
+      font-size: 16px;
+      line-height: 150%;
+    }
+  }
+}
+
+.contact-us {
+  .main-layout {
+    padding: 5rem 0;
+    .contact-title {font-size: 18px;line-height: 27px;font-weight: 700;margin-bottom: 4px;}
+    .contact-sub {font-size: 16px;line-height: 150%;margin-bottom: 1.5rem;}
+    button {
+      background-color: $blue-80;
+      padding: 8px 16px;
+    }
+  }
+}
+
+.events {
+  .main-layout {
+    padding: 5rem 0 10rem 0;
+    .row {row-gap: 4rem;}
+    .card-title {font-size: 24px;line-height: 150%;font-weight: 700;margin-bottom: .5rem;}
+    .card-body {font-size: 18px;line-height: 150%;padding: 0;margin-bottom: 24px;width: 900px;}
+
+    .event-slider {
+      width: 240px; height: 180px;
+    }
+    
+    .slick-slider {
+      height: 180px;
+      .slick-list {height: 180px;}
+      .slick-slide {margin-right: 1rem;}
+    }
+    button {
+      &.slick-prev:before, &.slick-next:before {color: $black;}
+    }
+  }
+}
+
+.product-list {
+  .main-layout {
+    padding: 5rem 0 10rem 0;
+    .cat {
+      width: 100%;
+      &.cat-active {
+        .bg-overlay {
+          background-color: rgba(0,0,0, .32) !important;
+        }
+        .info h5 {color: $white !important;}
+      }
+      .cat-picker {
+        position: relative;
+        height: 192px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 4rem;
+        .cat-image {
+          width: 100%;
+          position: absolute;
+          height: 100%;
+        }
+        .bg-overlay {
+          width: 100%;
+          height: 192px;
+          background-color: rgba(255,255,255, .64);
+          position: absolute;
+          top: 0; 
+        }
+        .info {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          h5 {color: $black; font-size: 32px; width: 160px; font-weight: 700; text-align: center; margin: 0;}
+        }
+      }
+    }
+    .subcat {
+      border: none;gap: .5rem;margin-bottom: 1rem;
+      &.nav-tabs .nav-link {
+        background-color: $blue-20;
+        color: $blue-80;
+        border-radius: 4px;
+        &:hover {
+          border-color: $blue-80;
+        }
+        &.active {
+          border: none;
+          background-color: $blue-80;
+          color: $white;
+          border-radius: 4px;
+          border: 1px solid $blue-80;
+        }
+      }
+    }
+    .tab-content {
+      a {
+        text-decoration: none;
+        width: 24rem;
+        .product-card {
+          filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.08));
+          .product-image {
+            position: relative;
+            height: 192px;
+            display: flex;
+            align-items: center;
+            .prod-image {
+              width: 100%;
+              position: absolute;
+              height: 100%;
+            }
+            .bg-overlay {
+              width: 100%;
+              height: 192px;
+              background: linear-gradient(178.8deg, rgba(0, 0, 0, 0) 62.24%, rgba(0, 0, 0, 0.2) 98.97%);
+              position: absolute;
+              top: 0; 
+            }
+            .info {
+              display: flex;
+              justify-content:flex-start;
+              align-items: flex-end;
+              padding-bottom: 1rem;
+              padding-left: 1.5rem;
+              height: 100%;
+              width: 100%;
+              z-index: 999;
+              h6 {color: $black; font-size: 24px; width: 160px; font-weight: 700; margin: 0;}
+            }
+          }
+          .product-info {
+            background-color: $white;
+            padding: 1.5rem;
+            .row {row-gap: .875rem;}
+            .row-info {
+              .info {
+                &-label {font-size: 14px;line-height: 21px;}
+                &-body {font-size: 14px;line-height: 21px;font-weight: 700;}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.product-details {
+  .main-layout {
+    padding: 5rem 0 10rem 0;
+    .product-slider {
+      width: 240px; height: 400px;
+    }
+    .slick-slider {
+      height: 400px;
+      margin-bottom: 4rem;
+      .slick-list {height: 400px;}
+      .slick-slide {margin-right: 1rem;}
+      .slick-dots li.slick-active button:before {
+
+      }
+    }
+    button {
+      &.slick-prev:before, &.slick-next:before {color: $black;}
+    }
+    .summary {
+      margin-bottom: 3rem;
+      h5 {
+        color: $black; font-size: 32px; font-weight: 700; margin: 0;
+        margin-bottom: 1rem;
+      }
+      .row-info {
+        .info {
+          &-label {font-size: 14px;line-height: 21px;}
+          &-body {font-size: 14px;line-height: 21px;font-weight: 700;}
+        }
+      }
+    }
+    .body-title {font-size: 20px; font-weight: 700;line-height: 30px;margin-bottom: 0.5rem;}
+    .body-text {font-size: 18px;line-height: 27px;white-space: pre-line;}
+  }
+}
+
+footer {
+  margin-bottom: 4rem;
+  .text-overlay {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .sea-map {height: 30rem;}
+    h4 {
+      position: absolute;
+      font-size: 3rem;
+      line-height: 150%;
+      font-weight: 700;
+      color: $blue-80;
+      width: 800px;
+    }
+  }
+  .footer-info {
+    margin-top: 2rem;
+    a {
+      color: $black;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .logo-footer {
+      width: 48px;
+      height: auto;
+      object-fit: cover;
+    }
+    .icon-footer{
+      width: 16px;
+      height: 16px;
+    }
+    .copyright {
+      font-size: 12px;
+    }
+  }
+}
+
+@import "responsive";
