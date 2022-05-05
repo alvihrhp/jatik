@@ -49,8 +49,8 @@ const Contacts = ({ children }) => {
                   </Button>
                 </Form>
               </div>
-              <div className="col-12 col-lg-6 d-none d-lg-block d-xl-none">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.2912528360966!2d106.74249201476844!3d-6.091411695589047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1d274fa2ffc9%3A0x99601805bbc59dfc!2sGolf%20Island!5e0!3m2!1sid!2sid!4v1649586478313!5m2!1sid!2sid" width="100%" height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="jatik location map"></iframe>
+              <div className="col-12 col-lg-6 d-none d-lg-block">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31737.583712481694!2d106.73646231809792!3d-6.10402341711892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1d98c542305f%3A0x8a71f87f9c624f44!2sPIK%202!5e0!3m2!1sid!2sid!4v1651735753690!5m2!1sid!2sid" allowFullScreen loading="lazy" style={{ border: 0 }} referrerPolicy="no-referrer-when-downgrade" title="Jatik Location"></iframe>
               </div>
             </div>
           </div>
