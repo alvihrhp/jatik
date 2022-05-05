@@ -226,6 +226,10 @@
   .product-range .product-cat-list .product-cat .info p {font-size: 16px !important;}
 }
 
+@media (min-width: 1024px) {
+  .container {padding: 0;}
+}
+
 @media (min-width: 1440px) {
   .about-us-home .video-bg {
     width: 1140px;
