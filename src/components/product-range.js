@@ -5,6 +5,7 @@ import { Link } from "gatsby";
 const ProdRange = ({ children }) => {
   return (
     <section className="product-range product-range-page">
+
       <p className="product-title">Explore our products range</p>
       <div className="flex-row d-flex">
         <div className="product-cat-list d-flex justify-content-center">

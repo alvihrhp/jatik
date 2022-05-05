@@ -2,10 +2,15 @@ import * as React from "react";
 import Layout from "../components/layout";
 import BottomInquiry from "../components/bottom-inquiry";
 import { StaticImage } from "gatsby-plugin-image"
+import {Helmet} from "react-helmet";
 
 const ourPartners = ({ children }) => {
   return (
     <Layout>
+      <Helmet>
+        <title itemProp="name" lang="en">Our Partners</title>
+      </Helmet>
+
       <section className="about-us">
         <div className="container main-layout">
           <h6 className="page-title">Jatik's Parners</h6>

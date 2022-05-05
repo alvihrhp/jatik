@@ -5,6 +5,7 @@ import BottomInquiry from "../../components/bottom-inquiry";
 import CatPicker from "../../components/cat-picker";
 import ProductCard from "../../components/product-card";
 import { Tabs, Tab } from "react-bootstrap";
+import { Helmet } from "react-helmet";
 
 /** Image */
 import ZFast from '../../images/weapon/zboyar_fast.png';
@@ -61,6 +62,9 @@ const SoundModerators = () => {
 
   return (
     <Layout>
+      <Helmet>
+        <title itemProp="name" lang="en">Sound & Moderators</title>
+      </Helmet>
       <section className="product-list">
         <div className="container main-layout">
           <div className="row">

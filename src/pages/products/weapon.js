@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
+import { Helmet } from "react-helmet";
 
 import Layout from "../../components/layout";
 import BottomInquiry from "../../components/bottom-inquiry";
@@ -170,6 +171,10 @@ const Weapon = ({ children }) => {
 
   return (
     <Layout>
+      <Helmet>
+        <title itemProp="name" lang="en">Weapons</title>
+      </Helmet>
+
       <section className="product-list">
         <div className="container main-layout">
           <div className="row">

@@ -1,6 +1,7 @@
 import * as React from "react";
 import Layout from "../components/layout";
 import Slider from "react-slick";
+import {Helmet} from "react-helmet";
 import BottomInquiry from "../components/bottom-inquiry";
 import { StaticImage } from "gatsby-plugin-image"
 
@@ -43,6 +44,10 @@ const Events = ({ children }) => {
   };
   return (
     <Layout>
+      <Helmet>
+        <title itemProp="name" lang="en">Events</title>
+      </Helmet>
+
       <section className="events">
         <div className="container main-layout">
           <h6 className="page-title">Events</h6>

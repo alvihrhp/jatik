@@ -4,12 +4,17 @@ import BottomInquiry from "../components/bottom-inquiry";
 import ProdRange from "../components/product-range";
 import { StaticImage } from "gatsby-plugin-image"
 import { Button } from "react-bootstrap";
+import {Helmet} from "react-helmet";
 import { Link } from "gatsby";
 import bgVideo from "../video/video-bg.mp4";
 
 const Homepage = ({ children }) => {
   return (
     <Layout>
+      <Helmet>
+        <title itemProp="name" lang="en">Home</title>
+      </Helmet>
+
       <section className="hero">
         <div className="text-overlay">
           <StaticImage src="../images/hero.jpg" alt="hero" className="bg-overlay"/>

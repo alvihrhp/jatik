@@ -1,10 +1,15 @@
 import * as React from "react";
+import {Helmet} from "react-helmet";
 import Layout from "../components/layout";
 import { Form, Button } from "react-bootstrap";
 
 const Contacts = ({ children }) => {
   return (
     <Layout>
+      <Helmet>
+        <title itemProp="name" lang="en">Contact Us</title>
+      </Helmet>
+
       <section className="contact-us">
         <div className="container main-layout">
           <div className="container">

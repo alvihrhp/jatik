@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import Layout from "../../../components/layout";
 import BottomInquiry from "../../../components/bottom-inquiry";
 import { StaticImage } from "gatsby-plugin-image"
+import { Helmet } from "react-helmet";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -23,6 +24,10 @@ const ProductDetails = ({ location }) => {
     state !== undefined 
     ? (
     <Layout>
+      <Helmet>
+        <title itemProp="name" lang="en">{state.name}</title>
+      </Helmet>
+
       <section className="product-details">
         <div className="container main-layout">
           <div className="row">
