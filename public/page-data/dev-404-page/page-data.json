@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---cache-dev-404-page-js",
     "path": "/dev-404-page/",
-    "result": {"data":{"allSiteFunction":{"nodes":[]},"allSitePage":{"nodes":[{"path":"/404/"},{"path":"/404.html"},{"path":"/about-us/"},{"path":"/contacts/"},{"path":"/events/"},{"path":"/"},{"path":"/our-partners/"},{"path":"/product-services/"},{"path":"/products/sound-moderators/"},{"path":"/products/weapon/"},{"path":"/products/weapon/product-details/"}]}},"pageContext":{}},
+    "result": {"errors":[{"message":"Cannot read property 'id' of undefined","locations":[{"line":7,"column":3}],"path":["allSitePage"]}],"data":null,"pageContext":{}},
     "staticQueryHashes": []}

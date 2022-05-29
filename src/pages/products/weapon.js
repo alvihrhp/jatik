@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
 import { Helmet } from "react-helmet";
+import { StaticImage } from "gatsby-plugin-image";
 
 import Layout from "../../components/layout";
 import BottomInquiry from "../../components/bottom-inquiry";
-import CatPicker from "../../components/cat-picker";
+import WeaponCatPicker from "../../components/cat-picker/weapon-cat-picker";
 import ProductCard from "../../components/product-card";
+
+
 /** Image */
 import Z09 from '../../images/weapon/z_9.png';
 import Z1016 from '../../images/weapon/z_10_16.png';
@@ -178,9 +181,13 @@ const Weapon = ({ children }) => {
       <section className="product-list">
         <div className="container main-layout">
           <div className="row">
+            <Link to="../../product-services" className="gap-2 d-flex align-items-center back-icon">
+              <StaticImage src="../../images/icons/ArrowLeft.png" alt="back icon" className="icon-back"/>
+              Back to product & services
+            </Link>
             <h6 className="page-title">Weapon & Sound Moderators</h6>
             <div className="col-12">
-              <CatPicker></CatPicker>
+              <WeaponCatPicker></WeaponCatPicker>
             </div>
             <div className="col-12">
               <Tabs defaultActiveKey="Z-09" className="subcat">
@@ -191,7 +198,7 @@ const Weapon = ({ children }) => {
                         {
                           listWeapon[key].map((weapon, weaponIdx) => (
                             <div className="col-12 col-md-6 col-lg-4" key={weaponIdx}>
-                              <Link to="/products/weapon/product-details" state={weapon}>
+                              <Link to="/products/weapon-and-sound-moderators/product-details" state={weapon}>
                                 <ProductCard data={weapon}></ProductCard>
                               </Link>
                             </div>

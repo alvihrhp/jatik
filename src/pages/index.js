@@ -22,7 +22,7 @@ const Homepage = ({ children }) => {
             <div className="container">
               <div className="row">
                 <div className="col">
-                  <h4>Tincidunt nec mattis habitant tristique et.</h4>
+                  <h4>We're specialized group encompassing the entire spectrum of Defence, Security and Intelligence Technologies.</h4>
                   <Button href="/contacts" variant="light">Explore More</Button>
                 </div>
               </div>

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Layout from "../../components/layout";
 import { Link } from "gatsby";
 import BottomInquiry from "../../components/bottom-inquiry";
-import CatPicker from "../../components/cat-picker";
+import WeaponCatPicker from "../../components/cat-picker/weapon-cat-picker";
 import ProductCard from "../../components/product-card";
 import { Tabs, Tab } from "react-bootstrap";
 import { Helmet } from "react-helmet";
@@ -71,7 +71,7 @@ const SoundModerators = () => {
             <h6 className="page-title">Weapon & Sound Moderators</h6>
             
             <div className="col-12">
-              <CatPicker></CatPicker>
+              <WeaponCatPicker></WeaponCatPicker>
             </div>
 
             <div className="col-12">
@@ -83,7 +83,7 @@ const SoundModerators = () => {
                         {
                           listModerators[key].map((moderator, moderatorIdx) => (
                             <div className="col-12 col-md-6 col-lg-4" key={moderatorIdx}>
-                              <Link to="/products/weapon/product-details" state={moderator}>
+                              <Link to="/products/weapon-and-sound-moderators/product-details" state={moderator}>
                                 <ProductCard data={moderator}></ProductCard>
                               </Link>
                             </div>
