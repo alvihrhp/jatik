@@ -7,6 +7,7 @@ import Layout from "../../components/layout";
 import BottomInquiry from "../../components/bottom-inquiry";
 import SoldierCatPicker from "../../components/cat-picker/soldier-cat-picker";
 import ProductCard from "../../components/product-card";
+
 /** Image */
 import Z09 from '../../images/weapon/z_9.png';
 import Z1016 from '../../images/weapon/z_10_16.png';

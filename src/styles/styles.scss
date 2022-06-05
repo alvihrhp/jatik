@@ -377,6 +377,7 @@ html, body {
             position: relative;
             height: 252px;
             display: flex;
+            justify-content: center;
             align-items: center;
             .prod-image {
               width: 100%;
@@ -409,10 +410,19 @@ html, body {
             .row {row-gap: .875rem;}
             .row-info {
               .info {
-                &-label {font-size: 14px;line-height: 21px;}
-                &-body {font-size: 14px;line-height: 21px;font-weight: 700;}
+                &-label {font-size: 14px;line-height: 21px;margin: 0;}
+                &-body {font-size: 14px;line-height: 21px;font-weight: 700;margin: 0;white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                }
               }
             }
+          }
+        }
+        &.armored-img {
+          .prod-image {
+            width: 80% !important;
+            height: 80% !important;
           }
         }
       }
@@ -423,13 +433,25 @@ html, body {
 .product-details {
   .main-layout {
     padding: 5rem 0 10rem 0;
+    .armoring-img img {
+      height: 100%;
+      width: 48% !important;
+      margin: 0 auto;
+      display: block !important;
+    }
+    .soldier-img img {
+      height: 100%;
+      width: 36% !important;
+      margin: 0 auto;
+      display: block !important;
+    }
     .product-slider {
       width: 240px; height: 400px;
     }
     .slick-slider {
       height: 400px;
       margin-bottom: 4rem;
-      .slick-list {height: 400px;}
+      .slick-list {height: 400px;display: flex;align-items: center;}
       .slick-slide {margin-right: 1rem;}
     }
     button {

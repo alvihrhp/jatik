@@ -31,9 +31,9 @@ const ArmoringProductDetails = ({ location }) => {
       <section className="product-details">
         <div className="container main-layout">
           <div className="row">
-            <div className="col">
+            <div className="col armoring-img">
                 <Slider {...settings}>
-                  <img src={state.image} alt="weapon" className="product-slider-single"/>
+                  <img src={state.image} alt="armoring vehicle" className="product-slider-single"/>
                 </Slider>
               {/* <Slider {...settings}>
                   <StaticImage alt="product image" src="../../../images/1.jpg" className="product-slider"/>
@@ -46,7 +46,7 @@ const ArmoringProductDetails = ({ location }) => {
               </Slider> */}
               <div className="summary">
                 <h5>{state.name}</h5>
-                <div className="row">
+                <div className="row gap-3">
                   {
                     Object.keys(state.spec).map((key, keyIdx) => (
                       <div className="col-6 col-md-4 col-lg-2 row-info" key={keyIdx}>

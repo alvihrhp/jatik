@@ -17,8 +17,8 @@ const ProductCard = ({ data }) => {
           {
             Object.keys(data.spec).map((key, keyIdx) => (
               <div className="col-12 row-info" key={keyIdx}>
-                <div className="info-label">{key}</div>
-                <div className="info-body">{data.spec[key]}</div>
+                <p className="info-label">{key}</p>
+                <p className="info-body">{data.spec[key]}</p>
               </div>
             ))
           }

@@ -31,7 +31,7 @@ const SoldierProductDetails = ({ location }) => {
       <section className="product-details">
         <div className="container main-layout">
           <div className="row">
-            <div className="col">
+            <div className="col soldier-img">
                 <Slider {...settings}>
                   <img src={state.image} alt="weapon" className="product-slider-single"/>
                 </Slider>
