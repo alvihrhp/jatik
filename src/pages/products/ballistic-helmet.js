@@ -86,7 +86,7 @@ const Ballistic = ({ children }) => {
           Weight: '1,641gr',
           Size: 'All size (customizable)',
           Level: 'NIJ Level III-A',
-          Completeness: 'Side Rail, NVG mount',
+          Completeness: `Side Rail, NVG mount`,
         },
         desc: `Bulletproof helmets are designed to allow for comfortable head movement and are lighter than other ballistic helmets. Strong protection from fragmentation projectiles, ballistics and other elemental threats. SPRINT helmets use a pad liner system for increased stability and comfort.
         

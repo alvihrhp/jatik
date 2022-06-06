@@ -9,7 +9,11 @@ import SoldierCatPicker from "../../components/cat-picker/soldier-cat-picker";
 import ProductCard from "../../components/product-card";
 
 /** Image */
-import Z09 from '../../images/weapon/z_9.png';
+import antiStab from '../../images/vest/anti-stab.jpg';
+import Maritime from '../../images/vest/maritime.png';
+import Maxim from '../../images/vest/maxim.jpg';
+import Raid from '../../images/vest/raid.jpg';
+import Shell from '../../images/vest/shell.jpg';
 
 
 import { Tabs, Tab } from "react-bootstrap";
@@ -19,23 +23,62 @@ const BallisticVest = ({ children }) => {
   const [ listBallisticVest, setListBallisticVest ] = useState({
     "Ballistic Vest": [
       {
-        name: 'Air Frame',
-        image: Z09,
+        name: 'Law Enforcement Anti Stab',
+        image: antiStab,
         spec: {
-          Weight: '1,837gr',
-          Size: 'All size (customizable)',
-          Level: 'NIJ Level III-A',
-          Completeness: 'Side Rail, NVG mount',
+          Weight: '2,964gr',
+          Size: 'All size',
+          Protection: 'Anti Puncture',
+          Completeness: 'Polycarbonate',
         },
-        desc: `Designed with 2 unique separate shells to improve ventilation integration and reduce the destructive effects of blast wave. Good air circulation to keep your head comfortable.
-        
-        •   Helmet protection with the lowest deformation.
-        •   Equipped with the J-Forces Suspension System for increased comfort and stability.
-        •   Meets NIJ (National Institute of Justice) Ballistic performance, protection and quality standards.
-        •   The foundation for all J-Forces Modular Protection System components and accessories.
-        •   Revolutionary ventilated shell design for passive cooling.
-        •   Modular ear and face protection is available.
-        •   More protection on the back of the neck.`
+        desc: `Ballistic body armor designed with a plate carrier model that makes it easier for users to operate for greater comfort and agility. Provides protection for vital areas on the body from bullets and other ammunition. The quality of high-level protection, consisting of Level III-A, III, and Level IV, has passed the test according to the National Institute of Justice (NIJ 0101.06). equipped with a Velcro System lock that makes it easy to install equipment
+        supporter.`
+      },
+      {
+        name: 'Maritime Modular Forces',
+        image: Maritime,
+        spec: {
+          Weight: '1,052gr',
+          Size: 'All size',
+        },
+        desc: `Ballistic body armor designed with a plate carrier model that makes it easier for users to operate for greater comfort and agility. Provides protection for vital areas on the body from bullets and other ammunition. The quality of high-level protection, consisting of Level III-A, III, and Level IV, has passed the test according to the National Institute of Justice (NIJ 0101.06). equipped with a Velcro System lock that makes it easy to install equipment
+        supporter.`
+      },
+      {
+        name: 'Maximum Modular Forces',
+        image: Maritime,
+        spec: {
+          Weight: '7,444gr',
+          Size: 'All size',
+          Protection: 'Shop Armor, Hard Armor, S.A.P.I Cut, Shoter Cut, Square Cut',
+          Completeness: 'Collars, Arms, Groin, Soft Armor, PE Ceramic'
+        },
+        desc: `Ballistic body armor designed with a plate carrier model that makes it easier for users to operate for greater comfort and agility. Provides protection for vital areas on the body from bullets and other ammunition. The quality of high-level protection, consisting of Level III-A, III, and Level IV, has passed the test according to the National Institute of Justice (NIJ 0101.06). equipped with a Velcro System lock that makes it easy to install equipment
+        supporter.`
+      },
+      {
+        name: 'Raid Mobility Forces',
+        image: Raid,
+        spec: {
+          Weight: '4,720gr',
+          Size: 'All size',
+          Protection: 'Shop Armor, Hard Armor, S.A.P.I Cut, Shoter Cut, Square Cut',
+          Completeness: 'Assaulter Panel Pack, Camel Bag'
+        },
+        desc: `Ballistic body armor designed with a plate carrier model that makes it easier for users to operate for greater comfort and agility. Provides protection for vital areas on the body from bullets and other ammunition. The quality of high-level protection, consisting of Level III-A, III, and Level IV, has passed the test according to the National Institute of Justice (NIJ 0101.06). equipped with a Velcro System lock that makes it easy to install equipment
+        supporter.`
+      },
+      {
+        name: 'Shell Protection Forces',
+        image: Shell,
+        spec: {
+          Weight: '6,660gr',
+          Size: 'All size',
+          Protection: 'Shop Armor, Hard Armor, S.A.P.I Cut, Shoter Cut, Square Cut',
+          Completeness: 'Assaulter Panel Pack'
+        },
+        desc: `Ballistic body armor designed with a plate carrier model that makes it easier for users to operate for greater comfort and agility. Provides protection for vital areas on the body from bullets and other ammunition. The quality of high-level protection, consisting of Level III-A, III, and Level IV, has passed the test according to the National Institute of Justice (NIJ 0101.06). equipped with a Velcro System lock that makes it easy to install equipment
+        supporter.`
       },
     ]
   })
@@ -58,7 +101,7 @@ const BallisticVest = ({ children }) => {
               <SoldierCatPicker></SoldierCatPicker>
             </div>
             <div className="col-12">
-              <Tabs defaultActiveKey="Z-09" className="subcat">
+              <Tabs className="subcat">
                 {
                   Object.keys(listBallisticVest).map((key, keyIdx) => (
                     <Tab eventKey={key} title={key} key={keyIdx}>

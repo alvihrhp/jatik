@@ -13,11 +13,13 @@ const NotFoundPage = ({ children }) => {
       <section className="maintenance">
         <Helmet defaultTitle="Jatik.id - Under maintenance"></Helmet>
 
-        <div className="row">
-          <div className="col maintenance-body">
+        <div className="row d-flex justify-content-center">
+          <div className="col-12 col-md-6 maintenance-body">
             <StaticImage src="../images/maintenance.jpg" className="maintenance-image" alt="maintenance image"></StaticImage>
             <h6>This page is under maintenance</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in viverra quisque et viverra volutpat. Tempor ultrices eleifend orci cras augue condimentum dui. Libero viverra amet bibendum congue eu fermentum. Metus, vitae at augue id etiam ultricies consequat, massa.</p>
+            <p>We're sincerely apologize for the inconvenience. The content you looking for is not present at the moment, please contact us at: <a href="mailto:info@jatik.co.id">info@jatik.co.id</a> for further information.
+            <br/><br/>
+            Thank you for your patience, meanwhile you can come back to our homepage</p>
             <Link to="/" className="btn-solid">Back to home</Link>
           </div>
         </div>

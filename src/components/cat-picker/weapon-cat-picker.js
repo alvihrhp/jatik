@@ -27,7 +27,7 @@ const WeaponCatPicker = ({ children }) => {
     // </div>
     <div className="cat-categories">
       <p className="picker-title">Pick a category</p>
-      <div className="flex-row gap-3 d-flex align-items-center">
+      <div className="flex-row gap-3 overflow-auto d-flex align-items-center">
         <Link to="/products/weapon" className="cat" activeClassName="cat-active">
           <div className="cat-picker">
             {/* <StaticImage src="../images/weapon.jpg" alt="weapon" className="cat-image"/> */}

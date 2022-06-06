@@ -45,20 +45,19 @@ const SoldierProductDetails = ({ location }) => {
                   <StaticImage alt="product image" src="../../../images/7.jpg" className="product-slider"/>
               </Slider> */}
               <div className="summary">
-                <h5>{state.name}</h5>
-                <div className="row">
+                <h5 className="mb-5">{state.name}</h5>
+                <p className="mb-4 body-text">{state.desc}</p>
+                <div className="row low-specs">
                   {
                     Object.keys(state.spec).map((key, keyIdx) => (
-                      <div className="col-6 col-md-3 row-info" key={keyIdx}>
-                        <div className="info-label">{key}</div>
-                        <div className="info-body">{state.spec[key]}</div>
+                      <div className="col-12 col-sm-3 col-md-3 row-info" key={keyIdx}>
+                        <p className="info-label">{key}</p>
+                        <p className="info-body">{state.spec[key]}</p>
                       </div>
                     ))
                   }
                 </div>
               </div>
-              <p className="body-title">Product description</p>
-              <p className="body-text">{state.desc}</p>
             </div>
           </div>
         </div>
